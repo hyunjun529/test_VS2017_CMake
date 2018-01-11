@@ -1,3 +1,0 @@
-[submodule "0_test_cmake_project/glfw"]
-	path = 0_test_cmake_project/glfw
-	url = https://github.com/glfw/glfw.git

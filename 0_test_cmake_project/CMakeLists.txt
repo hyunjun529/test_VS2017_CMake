@@ -7,5 +7,16 @@ find_package(OpenGL REQUIRED)
 
 enable_testing()
 
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(${PROJECT_SOURCE_DIR}/src)
 include_directories(${PROJECT_SOURCE_DIR}/glfw/include)
 
+if(WIN32)
+    ADD_DEFINITIONS(-DUNICODE)
+    ADD_DEFINITIONS(-D_UNICODE)
+endif(WIN32)
+
+add_subdirectory(src)
+
+add_executable(main ${PROJECT_SOURCE_DIR}/src/main.cpp)

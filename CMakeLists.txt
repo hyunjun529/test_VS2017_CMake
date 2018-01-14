@@ -14,4 +14,6 @@ set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake_modules")
 
 include_directories (${GLFW_INCLUDE_DIR})
 
+include_directories (${PROJECT_SOURCE_DIR}/deps)
+
 add_subdirectory(src)

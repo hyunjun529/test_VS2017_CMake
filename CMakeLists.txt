@@ -12,6 +12,8 @@ set (GLFW_ROOT ${OPT_GLFW_ROOT})
 
 set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake_modules")
 
+find_package (GLFW)
+
 include_directories (${GLFW_INCLUDE_DIR})
 
 include_directories (${PROJECT_SOURCE_DIR}/deps)
